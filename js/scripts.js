@@ -32,8 +32,17 @@ if(hour > 12)
 
 
 if(hour > 19 || hour < 7)
-    $('body').addClass('night');
+{
 
+    $('body').removeClass('day').addClass('night');
+    $('article').removeClass('articleDay').addClass('articleNight');
+}
+else
+{
+  $('body').removeClass('night').addClass('day');
+    $('article').removeClass('articleNight').addClass('articleDay');
+
+}
 
 var date = month + "/" + day + "/" + year;
 var time = hour%12 + ":" + minutes + " " + apm;

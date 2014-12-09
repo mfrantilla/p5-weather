@@ -20,12 +20,25 @@ p
 }
 
 
-article
+.articleDay
 {
 	width: 20em;
 	height: 20em; 
 	background-color: rgba(0,0,0,0.5);
-	color: white;
+	margin: auto;
+	margin-top: 2em;
+	padding-top: 2em;
+	text-align: center;
+	border-radius: 5px;
+	border: solid, 2px, white;
+}
+
+.articleNight
+{
+	width: 20em;
+	height: 20em; 
+	color: #333;
+	background-color: rgba(255,255,255,0.5);
 	margin: auto;
 	margin-top: 2em;
 	padding-top: 2em;
@@ -38,11 +51,12 @@ article
 .day
 {
 	background: url('../img/day.png');
-	color: white;
+	color: #333;
 }
 
 .night
 {
 	background: url('../img/night.png');
+	color: white;
 }
 
