@@ -43,9 +43,15 @@ else
     $('article').removeClass('articleNight').addClass('articleDay');
 
 }
+//Fixing Minutes and Hour Formatting
+var hour = hour%12;
+if(hour%12 == 0)
+  var hour = 12;
+if(minutes < 10)
+    var minutes = "0" + minutes;
 
 var date = month + "/" + day + "/" + year;
-var time = hour%12 + ":" + minutes + " " + apm;
+var time = hour + ":" + minutes + " " + apm;
 
 
 
