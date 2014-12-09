@@ -1,16 +1,28 @@
 body
 {
 	background: url('../img/day.png');
+	font-family: 'Open Sans Condensed', sans-serif;
+
 }
 
-
-article
+h1
 {
-	width: 40em;
-	height: 40em;
-	background-color: rgba(0,0,0,0.5);
-	color: white;
-	margin: auto;
+	text-align: center;
 	margin-top: 3em;
 
 }
+
+article
+{
+	width: 20em;
+	height: 20em; 
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	margin: auto;
+	margin-top: 2em;
+	
+	text-align: center;
+}
+
+
+
