@@ -6,10 +6,11 @@ body
 
 article
 {
-	width: 10em;
-	height: 10em;
+	width: 40em;
+	height: 40em;
 	background-color: rgba(0,0,0,0.5);
 	color: white;
 	margin: auto;
 	margin-top: 3em;
+
 }
