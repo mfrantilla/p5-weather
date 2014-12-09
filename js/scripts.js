@@ -1,5 +1,7 @@
 // Docs at http://simpleweatherjs.com
 
+
+
 $(document).ready(function() {
 
 
