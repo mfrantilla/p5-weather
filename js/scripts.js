@@ -56,8 +56,10 @@ var time = hour + ":" + minutes + " " + apm;
 
 
 
-$('.date').text(date);
+$('.date').text(date + " | ");
 $('.time').text(time);
+
+
 
 
 
@@ -81,7 +83,7 @@ $.simpleWeather({
   });//End Simple Weather
 
 
-
+$('h1').text(weather.city + "'s Weather")
 
 
 });

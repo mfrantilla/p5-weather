@@ -15,11 +15,20 @@ h1
 p
 {
 	text-align: center;
-	font-size: 1.5em;
 	margin-bottom: 2px;
 }
 
+.dateTime
+{
+	font-size: 1em;
+	text-align: center;
+	margin: auto;
+}
 
+.dateTime>p
+{
+	display: inline;
+}
 .articleDay
 {
 	width: 20em;
