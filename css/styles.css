@@ -12,6 +12,14 @@ h1
 
 }
 
+p
+{
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 2px;
+}
+
+
 article
 {
 	width: 20em;
@@ -20,9 +28,21 @@ article
 	color: white;
 	margin: auto;
 	margin-top: 2em;
-	
+	padding-top: 2em;
 	text-align: center;
+	border-radius: 5px;
+	border: solid, 2px, white;
 }
 
 
+.day
+{
+	background: url('../img/day.png');
+	color: white;
+}
+
+.night
+{
+	background: url('../img/night.png');
+}
 
