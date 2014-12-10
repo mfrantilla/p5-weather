@@ -31,7 +31,7 @@ if(hour > 12)
 
 
 
-if(hour > 16 || hour < 7)
+if(hour > 16 || hour < 6)
 {
 
     $('body').removeClass('day').addClass('night');

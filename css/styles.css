@@ -20,15 +20,24 @@ p
 
 i
 {
+	
 	padding-bottom: 1.25em;
 }
 
 
-div>i
+.iconBox
 {
 
+	padding-top: 2em;
 	border-bottom-style: dashed;
-	display: block;
+	height: 30%;
+	width: 80%;
+	margin: auto;
+}
+
+article>div
+{
+	height:50%;
 }
 
 .dateTime
@@ -59,8 +68,8 @@ div>i
 
 .articleNight
 {
-	width: 20em;
-	height: 20em; 
+	max-width: 50%;
+	height: 50%; 
 	color: #333;
 	background-color: rgba(255,255,255,0.5);
 	margin: auto;
@@ -69,6 +78,7 @@ div>i
 	text-align: center;
 	border-radius: 5px;
 	border: solid, 2px, white;
+
 }
 
 
@@ -88,4 +98,5 @@ div>i
 {
 	font-size: 3em;
 	text-align: left;
+	padding-top: 1.25em;
 }
