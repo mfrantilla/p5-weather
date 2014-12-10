@@ -67,7 +67,7 @@ $('.time').text(time);
 
 
 $.simpleWeather({
-    location: '99205',
+    location: 'Austin, TX',
     woeid: '',
     unit: 'f',
 
