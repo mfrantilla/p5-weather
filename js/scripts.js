@@ -67,7 +67,7 @@ $('.time').text(time);
 
 
 $.simpleWeather({
-    location: 'Boston',
+    location: 'Spokane',
     woeid: '',
     unit: 'f',
 
