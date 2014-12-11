@@ -60,6 +60,20 @@ $('.date').text(date + " | ");
 $('.time').text(time);
 
 
+//INPUT BOX
+
+var zipCode = '99004';
+
+
+
+
+
+$('button').click(function(){
+
+    zipCode = $("input").val(); 
+    
+
+});
 
 
 
@@ -67,7 +81,7 @@ $('.time').text(time);
 
 
 $.simpleWeather({
-    location: 'Spokane',
+    location: zipCode,
     woeid: '',
     unit: 'f',
 

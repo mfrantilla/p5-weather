@@ -37,20 +37,22 @@ p
 }
 
 
-.zipSearch
-{
-	margin: auto;
-	margin-top: 3em;
-	width: 50%;
-
-}
 
 input
 {
 	width: 50%;
 	margin:auto;
+	padding:.5em;
+	border-radius: 2px;
+
 }
 
+.ui.button
+{
+	background-color: #444349;
+	color: white;
+	
+}
 
 .iconBox
 {
