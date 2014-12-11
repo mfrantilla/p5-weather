@@ -18,6 +18,8 @@ body
 
 }
 
+
+
 h1
 
 {	
@@ -32,6 +34,21 @@ p
 {
 	text-align: center;
 	margin-bottom: 2px;
+}
+
+
+.zipSearch
+{
+	margin: auto;
+	margin-top: 3em;
+	width: 50%;
+
+}
+
+input
+{
+	width: 50%;
+	margin:auto;
 }
 
 

@@ -97,7 +97,7 @@ $.simpleWeather({
 
   });//End Simple Weather
 
-
+  
 
 $('h1').text($.simpleWeather.location + "'s Weather")
 
