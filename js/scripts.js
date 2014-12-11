@@ -67,7 +67,7 @@ $('.time').text(time);
 
 
 $.simpleWeather({
-    location: 'Austin, TX',
+    location: 'Cheney, WA',
     woeid: '',
     unit: 'f',
 
@@ -83,7 +83,8 @@ $.simpleWeather({
   });//End Simple Weather
 
 
-$('h1').text(weather.city + "'s Weather")
+
+$('h1').text($.simpleWeather.location + "'s Weather")
 
 
 });
