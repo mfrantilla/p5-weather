@@ -55,7 +55,6 @@ var time = hour + ":" + minutes + " " + apm;
 
 
 
-
 $('.date').text(date + " | ");
 $('.time').text(time);
 
@@ -68,12 +67,47 @@ var zipCode = '99004';
 
 
 
-$('button').click(function(){
+$('.ui.button').on('click', function(){
 
-    zipCode = $("input").val(); 
-    
+    var zipCode = $('input').val();
+    console.log(zipCode);
 
-});
+
+          $.simpleWeather({
+          location: zipCode,
+          woeid: '',
+          unit: 'f',
+
+          success: function(weather) {
+            icon = '<h2><i class="icon-'+weather.code+'"></i>';
+            html = '<p>'+weather.temp+'&deg;'+weather.units.temp+'</p>';
+            html = html + '<p>' + weather.currently + '<p>';
+
+            title = '<p>' + weather.city + ", " + weather.region + '<p>';
+           
+            //console.log(weather.forecast[1].text);
+            
+            tomorrowIcon = '<i class="icon-'+weather.forecast[1].code+'"></i>';
+            tomorrow = "Tomorrow's Weather: "+ weather.forecast[1].text + " " +tomorrowIcon;
+
+
+
+            $("#weather").html(html);
+            $('i').html(icon);
+            $('h1').html(title);
+            $('.tomorrow').html(tomorrow);
+           // $('.tomorrow').html(tomorrowIcon);
+          },
+          error: function(error) {
+            $("#weather").html('<p>'+error+'</p>');
+          }
+
+        });//End Simple Weather
+
+
+ });
+
+
 
 
 
@@ -111,6 +145,7 @@ $.simpleWeather({
 
   });//End Simple Weather
 
+  
   
 
 $('h1').text($.simpleWeather.location + "'s Weather")

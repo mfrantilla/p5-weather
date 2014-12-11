@@ -44,7 +44,7 @@ input
 	margin:auto;
 	padding:.5em;
 	border-radius: 2px;
-
+	color: #333;
 }
 
 .ui.button
@@ -53,6 +53,8 @@ input
 	color: white;
 	
 }
+
+
 
 .iconBox
 {
