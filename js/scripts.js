@@ -67,7 +67,7 @@ $('.time').text(time);
 
 
 $.simpleWeather({
-    location: 'Cheney, WA',
+    location: 'Boston',
     woeid: '',
     unit: 'f',
 
@@ -77,10 +77,19 @@ $.simpleWeather({
       html = html + '<p>' + weather.currently + '<p>';
 
       title = '<p>' + weather.city + ", " + weather.region + '<p>';
+     
+      //console.log(weather.forecast[1].text);
       
+      tomorrowIcon = '<i class="icon-'+weather.forecast[1].code+'"></i>';
+      tomorrow = "Tomorrow's Weather: "+ weather.forecast[1].text + " " +tomorrowIcon;
+
+
+
       $("#weather").html(html);
       $('i').html(icon);
       $('h1').html(title);
+      $('.tomorrow').html(tomorrow);
+     // $('.tomorrow').html(tomorrowIcon);
     },
     error: function(error) {
       $("#weather").html('<p>'+error+'</p>');
