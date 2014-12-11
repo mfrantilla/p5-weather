@@ -72,14 +72,20 @@ $.simpleWeather({
     unit: 'f',
 
     success: function(weather) {
+      icon = '<h2><i class="icon-'+weather.code+'"></i>';
       html = '<p>'+weather.temp+'&deg;'+weather.units.temp+'</p>';
-      html = html + '<p>' + weather.currently + '<p>'
-  
+      html = html + '<p>' + weather.currently + '<p>';
+
+      title = '<p>' + weather.city + ", " + weather.region + '<p>';
+      
       $("#weather").html(html);
+      $('i').html(icon);
+      $('h1').html(title);
     },
     error: function(error) {
       $("#weather").html('<p>'+error+'</p>');
     }
+
   });//End Simple Weather
 
 
