@@ -125,7 +125,7 @@ $.simpleWeather({
       html = html + '<p>' + weather.currently + '<p>';
 
       title = '<p>' + weather.city + ", " + weather.region + '<p>';
-     
+      highlow = '<br/>' + 'high: ' +weather.forecast[0].high + ' low: ' +weather.forecast[0].low;
       //console.log(weather.forecast[1].text);
       
       tomorrowIcon = '<i class="icon-'+weather.forecast[1].code+'"></i>';
@@ -135,6 +135,7 @@ $.simpleWeather({
 
       $("#weather").html(html);
       $('i').html(icon);
+      $('.highlow').html(highlow);
       $('h1').html(title);
       $('.tomorrow').html(tomorrow);
      // $('.tomorrow').html(tomorrowIcon);
