@@ -82,6 +82,7 @@ $('.ui.button').on('click', function(){
             icon = '<h2><i class="icon-'+weather.code+'"></i>';
             html = '<p>'+weather.temp+'&deg;'+weather.units.temp+'</p>';
             html = html + '<p>' + weather.currently + '<p>';
+            highlow = '<br/>' + 'high: ' +weather.forecast[0].high + ' low: ' +weather.forecast[0].low;
 
             title = '<p>' + weather.city + ", " + weather.region + '<p>';
            
@@ -94,6 +95,7 @@ $('.ui.button').on('click', function(){
 
             $("#weather").html(html);
             $('i').html(icon);
+            $('.highlow').html(highlow);
             $('h1').html(title);
             $('.tomorrow').html(tomorrow);
            // $('.tomorrow').html(tomorrowIcon);
